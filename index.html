@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code & Create with Sloni</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Code & Create with Sloni</div>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-btn">🌙</button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="hero-badge">Tech • Projects • Tips • Error Solutions</span>
+      <h1>Welcome to <span>Code & Create with Sloni</span></h1>
+      <p>
+        A modern and attractive blog website where you can learn coding,
+        explore mini projects, solve common errors, and get beginner-friendly tips.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#blogs" class="btn primary-btn">Explore Blogs</a>
+        <a href="#categories" class="btn secondary-btn">View Categories</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search -->
+  <section class="search-wrapper">
+    <div class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search tutorials, projects, tips, errors..."
+      />
+      <button id="clearSearch">Clear</button>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories-section" id="categories">
+    <div class="section-heading">
+      <h2>Browse Categories</h2>
+      <p>Choose a category and explore useful blog posts</p>
+    </div>
+
+    <div class="category-buttons">
+      <button class="filter-btn active" data-category="All" data-link="index.html">All</button>
+      <button class="filter-btn" data-category="Tutorial" data-link="tutorials.html">Tutorials</button>
+      <button class="filter-btn" data-category="Project" data-link="projects.html">Projects</button>
+      <button class="filter-btn" data-category="Error Solve" data-link="error-solve.html">Error Solve</button>
+      <button class="filter-btn" data-category="Tips" data-link="tips.html">Tips</button>
+    </div>
+
+    <div class="category-cards">
+
+  <a href="tutorials.html" class="category-card">
+    <div class="category-icon">💻</div>
+    <h3>Tutorials</h3>
+    <p>Learn HTML, CSS, JavaScript, Django and more.</p>
+  </a>
+
+  <a href="projects.html" class="category-card">
+    <div class="category-icon">🚀</div>
+    <h3>Projects</h3>
+    <p>Discover mini project ideas and practical implementations.</p>
+  </a>
+
+  <a href="error-solve.html" class="category-card">
+    <div class="category-icon">🛠️</div>
+    <h3>Error Solve</h3>
+    <p>Understand and fix common coding and Django errors.</p>
+  </a>
+
+  <a href="tips.html" class="category-card">
+    <div class="category-icon">✨</div>
+    <h3>Tips</h3>
+    <p>Get smart tips for coding, design, GitHub and projects.</p>
+  </a>
+
+</div>
+  </section>
+
+  <!-- Featured -->
+  <section class="featured-section">
+    <div class="section-heading">
+      <h2>Featured Highlights</h2>
+      <p>Top things you will find on this website</p>
+    </div>
+
+    <div class="featured-grid">
+      <div class="featured-box">
+        <h3>📘 Easy Tutorials</h3>
+        <p>Simple explanations for beginners in web development.</p>
+      </div>
+
+      <div class="featured-box">
+        <h3>💡 Smart Tips</h3>
+        <p>Helpful suggestions to improve your projects and skills.</p>
+      </div>
+
+      <div class="featured-box">
+        <h3>⚠️ Error Solutions</h3>
+        <p>Common problems with their clear and practical fixes.</p>
+      </div>
+
+      <div class="featured-box">
+        <h3>🎯 Mini Projects</h3>
+        <p>Project ideas to build portfolio and improve coding practice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog-section" id="blogs">
+    <div class="section-heading">
+      <h2>Latest Blog Posts</h2>
+      <p>Read trending and useful posts from different categories</p>
+    </div>
+
+    <div class="blog-container" id="blogContainer"></div>
+    <div class="no-post" id="noPost">No blog post found.</div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section" id="about">
+    <div class="section-heading">
+      <h2>About This Blog</h2>
+      <p>Know the purpose behind this mini project</p>
+    </div>
+
+    <div class="about-box">
+      <p>
+        <strong>Code & Create with Sloni</strong> is a beginner-friendly blog website
+        created as a mini project. It provides tutorials, mini project ideas,
+        coding tips, and solutions for common errors. The aim of this website
+        is to help students learn, build, solve, and improve in one place.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <div class="section-heading">
+      <h2>Contact</h2>
+      <p>You can customize this section with your own details</p>
+    </div>
+
+    <div class="contact-box">
+      <p><strong>Name:</strong> Sloni Raj</p>
+      <p><strong>Email:</strong> sloniraj2004@gmail.com</p>
+      <p><strong>Blog Name:</strong> Code & Create with Sloni</p>
+      <p><strong>Purpose:</strong> Tech, Projects, Tips & Error Solutions</p>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="postModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+
+      <span class="modal-category" id="modalCategory"></span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+
+      <div class="modal-actions">
+        <button id="modalLikeBtn" class="modal-like-btn">❤️ 0</button>
+      </div>
+
+      <div class="comments-section">
+        <h3>Comments</h3>
+        <div class="comment-input-area">
+          <input type="text" id="commentInput" placeholder="Write your comment..." />
+          <button id="addCommentBtn">Post</button>
+        </div>
+        <div class="comment-list" id="commentList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>Code & Create by Sloni</h3>
+    <p>Learn • Build • Solve • Improve</p>
+    <p>© 2026 All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

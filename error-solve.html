@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Error Solve - Code & Create with Sloni</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Code & Create with Sloni</div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#categories">Categories</a>
+      <a href="index.html#blogs">Blogs</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-btn">🌙</button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="index.html#categories">Categories</a>
+    <a href="index.html#blogs">Blogs</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <section class="page-banner compact-banner">
+    <div class="banner-text">
+      <span class="page-chip">Fix & Learn</span>
+      <h1>Error Solve</h1>
+      <p>Common coding and Django errors explained in easy words with simple fixes.</p>
+    </div>
+    <div class="banner-stats">
+      <div class="stat-box"><strong>CSS</strong><span>Path</span></div>
+      <div class="stat-box"><strong>Django</strong><span>Templates</span></div>
+      <div class="stat-box"><strong>JS</strong><span>Logic</span></div>
+      <div class="stat-box"><strong>SQL</strong><span>Constraints</span></div>
+    </div>
+  </section>
+
+  <section class="content-page enhanced-page">
+    <div class="section-heading left-heading">
+      <h2>Popular beginner errors</h2>
+      <p>Instead of only memorizing the solution, try to understand why the error happened.</p>
+    </div>
+
+    <div class="content-grid two-column-layout">
+      <div class="content-card clean-card featured-content-card">
+        <span class="card-badge">Django</span>
+        <h2>1. TemplateSyntaxError</h2>
+        <p>This happens when Django template tags are written incorrectly. Variables must use <strong>{{ }}</strong> and template logic must use <strong>{% %}</strong>. Even small mistakes in spacing or symbols can break the page.</p>
+        <div class="soft-note">Wrong: {% student.id %} &nbsp; | &nbsp; Correct: {{ student.id }}</div>
+      </div>
+
+      <div class="content-card clean-card">
+        <span class="card-badge">Frontend</span>
+        <h2>2. CSS File Not Linking</h2>
+        <p>If CSS is not applying, first check the file path, file name and folder structure. In Django, make sure static setup is correct and the stylesheet is loaded properly.</p>
+        <ul class="mini-points">
+          <li>Check href path</li>
+          <li>Check file name spelling</li>
+          <li>Refresh browser cache</li>
+        </ul>
+      </div>
+
+      <div class="content-card clean-card">
+        <span class="card-badge">JavaScript</span>
+        <h2>3. JavaScript Not Working</h2>
+        <p>This can happen because of syntax errors, wrong script path or trying to access HTML elements before the page loads. Use browser console to spot the exact issue.</p>
+        <ul class="mini-points">
+          <li>Open inspect console</li>
+          <li>Check script placement</li>
+          <li>Verify selectors and IDs</li>
+        </ul>
+      </div>
+
+      <div class="content-card clean-card">
+        <span class="card-badge">Database</span>
+        <h2>4. IntegrityError in Django</h2>
+        <p>This error appears when database rules are broken, such as saving empty values in required fields or inserting duplicate values into unique columns.</p>
+        <ul class="mini-points">
+          <li>Check required form fields</li>
+          <li>Validate input before save</li>
+          <li>Review model constraints</li>
+        </ul>
+      </div>
+
+      <div class="content-card clean-card">
+        <span class="card-badge">Routing</span>
+        <h2>5. NoReverseMatch Error</h2>
+        <p>Django throws this error when it cannot find the correct URL pattern. Usually the URL name is wrong or a required parameter is missing in the template or redirect.</p>
+        <ul class="mini-points">
+          <li>Check URL name</li>
+          <li>Pass correct parameter</li>
+          <li>Match template links with urls.py</li>
+        </ul>
+      </div>
+
+      <div class="content-card clean-card highlight-note-card">
+        <span class="card-badge">Debug Tip</span>
+        <h2>6. Read the error message carefully</h2>
+        <p>Do not panic when a red error appears. The traceback usually tells you the file name, line number and type of mistake. Start debugging from there.</p>
+        <div class="soft-note">Error message is not your enemy. It is a clue.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Code & Create with Sloni | Error Solve</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
